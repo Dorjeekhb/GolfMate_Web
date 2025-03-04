@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="GolfMate™: Innovación en Caddies Autónomos con IA" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GolfMate™ - Innovación en Caddies Autónomos</title>
+  <!-- Vincular la hoja de estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="spinner"></div>
+    <p>Cargando GolfMate™...</p>
+  </div>
+
+  <!-- ENCABEZADO / LOGO / MENÚ -->
+  <header id="header">
+    <div class="logo">GolfMate™</div>
+    <nav class="navbar" id="navbar">
+      <a href="#inicio">Inicio</a>
+      <a href="#caracteristicas">Características</a>
+      <a href="#galeria">Galería</a>
+      <a href="#funciona">Cómo Funciona</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <!-- Botón hamburguesa para móviles -->
+    <div class="burger" id="burger">
+      <div class="linea"></div>
+      <div class="linea"></div>
+      <div class="linea"></div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO CON VIDEO DE FONDO -->
+  <section class="hero" id="inicio">
+    <iframe class="video-fondo"
+      src="https://www.youtube.com/embed/5md-nI0PLMg?autoplay=1&mute=1&loop=1&playlist=5md-nI0PLMg&controls=0&modestbranding=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>GolfMate™</h1>
+      <p>El futuro del golf: Caddie Autónomo con IA, listo para revolucionar tu juego.</p>
+      <a href="#contacto" class="btn btn-primario">¡Quiero más info!</a>
+    </div>
+  </section>
+  
+
+  <!-- NUEVA SECCIÓN: GALERÍA -->
+  <section class="seccion reveal" id="galeria">
+    <h2>Nuestra Galería</h2>
+    <div class="galeria-container">
+      <div class="galeria-item">
+        <img src="https://via.placeholder.com/400x300" alt="GolfMate en acción">
+        <p>GolfMate™ en acción en un campo de golf</p>
+      </div>
+      <div class="galeria-item">
+        <img src="https://via.placeholder.com/400x300" alt="Detalles de GolfMate">
+        <p>Diseño y detalles innovadores</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CARACTERÍSTICAS -->
+  <section class="seccion reveal" id="caracteristicas">
+    <h2>¿Por Qué GolfMate™?</h2>
+    <div class="features">
+      <div class="feature-box">
+        <img src="https://via.placeholder.com/80" alt="Icono IA">
+        <h3>Navegación Autónoma</h3>
+        <p>GolfMate™ se desplaza sin intervención, optimizando tus tiempos de juego.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://via.placeholder.com/80" alt="Icono Swing">
+        <h3>Análisis de Swing</h3>
+        <p>La IA graba cada golpe y te ofrece datos para perfeccionar tu técnica y estrategia.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://via.placeholder.com/80" alt="Icono App">
+        <h3>App con Estadísticas</h3>
+        <p>Registra tus rondas, recibe actualizaciones y disfruta de un asesor virtual permanente.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://via.placeholder.com/80" alt="Icono Comodidad">
+        <h3>Comodidad Plena</h3>
+        <p>GolfMate™ transporta tus palos, reduciendo la fatiga y permitiéndote concentrarte en el juego.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CÓMO FUNCIONA -->
+  <section class="seccion bg-oscuro reveal" id="funciona">
+    <h2>¿Cómo Funciona?</h2>
+    <div class="pasos-container">
+      <div class="paso">
+        <span class="numero">1</span>
+        <h3>Enciende y Sincroniza</h3>
+        <p>Asocia GolfMate™ a la app para cargar datos de campos y tu estilo de juego.</p>
+      </div>
+      <div class="paso">
+        <span class="numero">2</span>
+        <h3>Deja que te Siga</h3>
+        <p>El caddie autónomo avanza contigo o se adelanta, según tus preferencias.</p>
+      </div>
+      <div class="paso">
+        <span class="numero">3</span>
+        <h3>Activa el Análisis</h3>
+        <p>Recibe feedback de cada swing, consejos de palos y recomendaciones tácticas en tiempo real.</p>
+      </div>
+      <div class="paso">
+        <span class="numero">4</span>
+        <h3>Mejora y Disfruta</h3>
+        <p>GolfMate™ registra tu score y evoluciona con tus actualizaciones y estilo de juego.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section class="seccion reveal" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Listo para llevar tu juego al siguiente nivel? Completa el siguiente formulario:</p>
+    <form id="contactForm" class="contact-form">
+      <div class="form-grupo">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-grupo">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required>
+      </div>
+      <div class="form-grupo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primario">Enviar</button>
+    </form>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <p>&copy; 2025 <strong>GolfMate™</strong> - Innovación en Caddies Autónomos. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- BOLA DE GOLF (CREADA CON CSS) -->
+  <div id="golfBall"></div>
+
+  <!-- SCRIPTS -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
