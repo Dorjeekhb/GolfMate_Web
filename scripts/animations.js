@@ -31,7 +31,7 @@
       const windowHeight = window.innerHeight;
     
       // Si la posición del scroll más la altura de la ventana es igual o mayor a la altura total del documento
-      if (scrollPosition + windowHeight >= 2556) {
+      if (scrollPosition + windowHeight >= documentHeight - 80) {
         stop = false;
         posX = -40;
       }
@@ -56,4 +56,3 @@
       animateBall();
     }
   });
-  
