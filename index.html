@@ -3,12 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="GolfMate™ - Innovación en Caddies Autónomos con IA">
+  <meta name="keywords" content="Golf, Caddies autónomos, IA, Robótica, Innovación, GolfMate, Deportes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GolfMate™ - Innovación en Caddies Autónomos</title>
+  
   <!-- Tipografía moderna -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Vinculación de la hoja de estilos -->
+
+  <!-- Vinculación de la hoja de estilos principal -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Script de Analytics (placeholder) -->
+  <script>
+    // Aquí podrías integrar Google Analytics u otra herramienta
+    // Ejemplo: gtag('config', 'TU_ID_DE_SEGUIMIENTO');
+  </script>
 </head>
 <body>
   <!-- PRELOADER -->
@@ -18,16 +27,20 @@
   </div>
   
   <!-- ENCABEZADO -->
-  <header id="header">
+  <header id="header" aria-label="Encabezado principal">
     <div class="logo">GolfMate™</div>
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Barra de navegación">
       <a href="#inicio">Inicio</a>
       <a href="#caracteristicas">Características</a>
       <a href="#galeria">Galería</a>
       <a href="#funciona">Cómo Funciona</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
+      <a href="#blog">Blog</a>
       <a href="#contacto">Contacto</a>
+      <a href="#reservas">Reservas</a>
     </nav>
-    <div class="burger" id="burger">
+    <div class="burger" id="burger" aria-label="Botón de menú móvil">
       <span class="linea"></span>
       <span class="linea"></span>
       <span class="linea"></span>
@@ -35,13 +48,14 @@
   </header>
   
   <!-- SECCIÓN HERO CON VIDEO -->
-  <section class="hero" id="inicio">
+  <section class="hero" id="inicio" aria-label="Sección principal de introducción">
     <iframe class="video-fondo"
       src="https://www.youtube.com/embed/5md-nI0PLMg?autoplay=1&mute=1&loop=1&playlist=5md-nI0PLMg&controls=0&modestbranding=1"
       frameborder="0"
       allow="autoplay; encrypted-media"
       allowfullscreen
-      loading="lazy">
+      loading="lazy"
+      title="Video de GolfMate">
     </iframe>
     <div class="overlay"></div>
     <div class="hero-content">
@@ -52,112 +66,218 @@
   </section>
   
   <!-- SECCIÓN GALERÍA -->
-  <section class="seccion reveal" id="galeria">
-    <h2>Nuestra Galería</h2>
-    <div class="galeria-container">
-      <div class="galeria-item">
-        <img src="https://via.placeholder.com/600x400" alt="GolfMate en acción">
-        <p>GolfMate™ en acción en un campo de golf</p>
-      </div>
-      <div class="galeria-item">
-        <img src="https://via.placeholder.com/600x400" alt="Detalles de GolfMate">
-        <p>Diseño y detalles innovadores</p>
+  <section class="seccion reveal" id="galeria" aria-label="Galería de imágenes">
+    <div class="container">
+      <h2>Nuestra Galería</h2>
+      <div class="galeria-container">
+        <div class="galeria-item">
+          <img src="https://via.placeholder.com/600x400" alt="GolfMate en acción en un campo de golf">
+          <p>GolfMate™ en acción en un campo de golf</p>
+        </div>
+        <div class="galeria-item">
+          <img src="https://via.placeholder.com/600x400" alt="Detalle del diseño innovador de GolfMate">
+          <p>Diseño y detalles innovadores</p>
+        </div>
       </div>
     </div>
   </section>
   
   <!-- SECCIÓN CARACTERÍSTICAS -->
-  <section class="seccion reveal" id="caracteristicas">
-    <h2>¿Por Qué GolfMate™?</h2>
-    <div class="features">
-      <div class="feature-box">
-        <img src="https://via.placeholder.com/80" alt="Icono IA">
-        <h3>Navegación Autónoma</h3>
-        <p>Se desplaza sin intervención para optimizar tu juego.</p>
-      </div>
-      <div class="feature-box">
-        <img src="https://via.placeholder.com/80" alt="Icono Swing">
-        <h3>Análisis de Swing</h3>
-        <p>Recibe datos precisos para perfeccionar tu técnica.</p>
-      </div>
-      <div class="feature-box">
-        <img src="https://via.placeholder.com/80" alt="Icono App">
-        <h3>App Integrada</h3>
-        <p>Monitorea estadísticas y mejora tu rendimiento en tiempo real.</p>
-      </div>
-      <div class="feature-box">
-        <img src="https://via.placeholder.com/80" alt="Icono Comodidad">
-        <h3>Comodidad Plena</h3>
-        <p>Libérate de cargar tus palos y disfruta del juego.</p>
+  <section class="seccion reveal" id="caracteristicas" aria-label="Características de GolfMate">
+    <div class="container">
+      <h2>¿Por Qué GolfMate™?</h2>
+      <div class="features">
+        <div class="feature-box">
+          <img src="https://via.placeholder.com/80" alt="Icono de Navegación IA">
+          <h3>Navegación Autónoma</h3>
+          <p>Se desplaza sin intervención para optimizar tu juego.</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://via.placeholder.com/80" alt="Icono de Análisis de Swing">
+          <h3>Análisis de Swing</h3>
+          <p>Recibe datos precisos para perfeccionar tu técnica.</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://via.placeholder.com/80" alt="Icono App Integrada">
+          <h3>App Integrada</h3>
+          <p>Monitorea estadísticas y mejora tu rendimiento en tiempo real.</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://via.placeholder.com/80" alt="Icono de Comodidad">
+          <h3>Comodidad Plena</h3>
+          <p>Libérate de cargar tus palos y disfruta del juego.</p>
+        </div>
       </div>
     </div>
   </section>
   
   <!-- SECCIÓN CÓMO FUNCIONA -->
-  <section class="seccion bg-oscuro reveal" id="funciona">
-    <h2>¿Cómo Funciona?</h2>
-    <div class="pasos-container">
-      <div class="paso">
-        <span class="numero">1</span>
-        <h3>Conecta y Sincroniza</h3>
-        <p>Asocia GolfMate™ a la app y sincroniza tus datos.</p>
-      </div>
-      <div class="paso">
-        <span class="numero">2</span>
-        <h3>Sigue Tu Ritmo</h3>
-        <p>GolfMate™ se adapta a tu estilo de juego.</p>
-      </div>
-      <div class="paso">
-        <span class="numero">3</span>
-        <h3>Análisis en Tiempo Real</h3>
-        <p>Recibe feedback inmediato para mejorar cada golpe.</p>
-      </div>
-      <div class="paso">
-        <span class="numero">4</span>
-        <h3>Disfruta y Evoluciona</h3>
-        <p>Observa cómo tu juego mejora con cada ronda.</p>
+  <section class="seccion bg-oscuro reveal" id="funciona" aria-label="Proceso de uso de GolfMate">
+    <div class="container">
+      <h2>¿Cómo Funciona?</h2>
+      <div class="pasos-container">
+        <div class="paso">
+          <span class="numero">1</span>
+          <h3>Conecta y Sincroniza</h3>
+          <p>Asocia GolfMate™ a la app y sincroniza tus datos.</p>
+        </div>
+        <div class="paso">
+          <span class="numero">2</span>
+          <h3>Sigue Tu Ritmo</h3>
+          <p>GolfMate™ se adapta a tu estilo de juego.</p>
+        </div>
+        <div class="paso">
+          <span class="numero">3</span>
+          <h3>Análisis en Tiempo Real</h3>
+          <p>Recibe feedback inmediato para mejorar cada golpe.</p>
+        </div>
+        <div class="paso">
+          <span class="numero">4</span>
+          <h3>Disfruta y Evoluciona</h3>
+          <p>Observa cómo tu juego mejora con cada ronda.</p>
+        </div>
       </div>
     </div>
   </section>
-  
+
+  <!-- SECCIÓN TESTIMONIOS -->
+  <section class="seccion reveal" id="testimonios" aria-label="Testimonios de usuarios">
+    <div class="container">
+      <h2>Testimonios</h2>
+      <div class="testimonios-container">
+        <div class="testimonio">
+          <blockquote>
+            "GolfMate™ cambió por completo mi experiencia de juego. ¡Es increíble!"
+          </blockquote>
+          <p>- Carlos Hernández, Golfista Amateur</p>
+        </div>
+        <div class="testimonio">
+          <blockquote>
+            "La precisión de datos es fantástica. Mi swing ha mejorado desde el primer uso."
+          </blockquote>
+          <p>- María Velázquez, Entrenadora de Golf</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN FAQ -->
+  <section class="seccion reveal" id="faq" aria-label="Preguntas Frecuentes">
+    <div class="container">
+      <h2>Preguntas Frecuentes (FAQ)</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">¿Cuánto dura la batería?</button>
+          <div class="faq-answer">
+            <p>La batería de GolfMate™ dura aproximadamente 18 hoyos de juego continuo (unas 4-5 horas).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">¿GolfMate™ se puede usar bajo la lluvia?</button>
+          <div class="faq-answer">
+            <p>Sí, cuenta con certificación de resistencia al agua para condiciones de lluvia ligera a moderada.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">¿Qué tan precisa es la medición de distancia?</button>
+          <div class="faq-answer">
+            <p>El sistema de navegación y medición láser tiene una precisión de +/- 1 metro en distancias de hasta 200 metros.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN BLOG O NOTICIAS -->
+  <section class="seccion reveal" id="blog" aria-label="Blog y noticias de GolfMate">
+    <div class="container">
+      <h2>Blog & Noticias</h2>
+      <div class="blog-container">
+        <article class="blog-post">
+          <h3>GolfMate™ se actualiza a la versión 2.0</h3>
+          <p>Conoce las nuevas funciones de navegación avanzada y mejoras en el seguimiento del swing.</p>
+        </article>
+        <article class="blog-post">
+          <h3>5 consejos para mejorar tu drive</h3>
+          <p>Descubre los mejores tips para maximizar la distancia y la precisión de cada golpe.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- SECCIÓN CONTACTO CON MAPA PARALLAX DETRÁS -->
-  <section class="seccion contacto-section reveal" id="contacto">
+  <section class="seccion contacto-section reveal" id="contacto" aria-label="Formulario de contacto">
     <!-- Contenedor del mapa con efecto parallax -->
     <div class="parallax-map">
       <iframe class="map-iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210821.80409487815!2d-14.005447987145443!3d28.35881430870085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4475e68e1ef9b7%3A0xedaef4c1ab7f0a7a!2sFuerteventura%2C%20Canary%20Islands%2C%20Spain!5e0!3m2!1sen!2sus!4v1593709102054!5m2!1sen!2sus"
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa de ejemplo">
       </iframe>
     </div>
-    <!-- Contenido del formulario de contacto -->
-    <div class="contact-content">
-      <h2>Contáctanos</h2>
-      <p>¿Listo para revolucionar tu juego? Escríbenos:</p>
-      <form id="contactForm" class="contact-form">
+    <!-- Contenido del formulario de contacto dentro de un contenedor -->
+    <div class="container">
+      <div class="contact-content">
+        <h2>Contáctanos</h2>
+        <p>¿Listo para revolucionar tu juego? Escríbenos:</p>
+        <form id="contactForm" class="contact-form">
+          <div class="form-grupo">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-grupo">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required>
+          </div>
+          <div class="form-grupo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué te podemos ayudar?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primario">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE RESERVAS O COMPRA -->
+  <section class="seccion reveal" id="reservas" aria-label="Formulario de reservas o compra">
+    <div class="container">
+      <h2>Reservas / Adquiere GolfMate™</h2>
+      <p>¿Deseas asegurarte tu propio GolfMate™? Completa el siguiente formulario para iniciar tu reserva.</p>
+      <form id="reservasForm" class="reservas-form">
         <div class="form-grupo">
-          <label for="nombre">Nombre Completo</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          <label for="nombreReserva">Nombre Completo</label>
+          <input type="text" id="nombreReserva" name="nombreReserva" placeholder="Tu nombre" required>
         </div>
         <div class="form-grupo">
-          <label for="email">Correo Electrónico</label>
-          <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required>
+          <label for="emailReserva">Correo Electrónico</label>
+          <input type="email" id="emailReserva" name="emailReserva" placeholder="usuario@ejemplo.com" required>
         </div>
         <div class="form-grupo">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué te podemos ayudar?"></textarea>
+          <label for="direccion">Dirección de Envío (opcional)</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Calle, número, ciudad...">
         </div>
-        <button type="submit" class="btn btn-primario">Enviar</button>
+        <div class="form-grupo">
+          <label for="cantidad">Cantidad a Reservar</label>
+          <input type="number" id="cantidad" name="cantidad" placeholder="1" min="1" required>
+        </div>
+        <button type="submit" class="btn btn-primario">Reservar</button>
       </form>
     </div>
   </section>
   
   <!-- PIE DE PÁGINA -->
-  <footer class="footer">
+  <footer class="footer" aria-label="Pie de página">
     <p>&copy; 2025 <strong>GolfMate™</strong> - Innovación en Caddies Autónomos. Todos los derechos reservados.</p>
+    <!-- Íconos de redes sociales (placeholder) -->
+    <div class="redes-sociales">
+      <a href="#" aria-label="Enlace a Facebook">Facebook</a> |
+      <a href="#" aria-label="Enlace a Instagram">Instagram</a> |
+      <a href="#" aria-label="Enlace a Twitter">Twitter</a>
+    </div>
   </footer>
   
   <!-- BOLA DE GOLF (opcional) -->
-  <div id="golfBall"></div>
+  <div id="golfBall" aria-hidden="true"></div>
   
   <!-- SCRIPTS -->
   <script src="scripts/main.js"></script>
